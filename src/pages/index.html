@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/home.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+
+        {% include "components/page-io-header.html" %}
+
+        <main>
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+        <p class="max">Assista onde quiser. Cancele quando quiser.</p>
+        <p class="bili">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        
+        <form id="flash">
+            <input type="email" placeholder="Email" title="Email" />
+            <button  type="submit" value="submit" >
+                VAMOS LÁ 
+                <span></span>
+            </button>
+        </form>
+        </main>
+    </div>
+{% endblock content %}
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}
